@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+  --veryDarkBlue: #121417;
+  --white: #fff;
+  --lightGrey: #959eac;
+  --darkBlue: #252d37;
+  --orange: #fb7413;
+  --mediumGrey: #7c8798;
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* 
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  /* color: ; */
+  line-height: 1;
+  line-height: 1.6;
+  background-color: lighten(#121417, 1%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.container {
+  width: 390px;
+  margin: 10rem auto;
+}
+.rating__section,
+.thankyou__section {
+  padding: 36px 36px 36px 28px;
+  //   padding: 36px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: darken(#252d37, 1%);
+
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+}
+.rating__section {
+  gap: 24px;
+}
+.thankyou__section {
+  gap: 24px;
+  padding: 32.5px;
+}
+.hide {
+  display: none;
+}
+.star-box {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lighten(#252d37, 3%);
+}
+.star-icon {
+  width: 16px;
+  height: 16px;
+}
+.text-box h2 {
+  color: #fff;
+  margin-bottom: 6px;
+}
+
+.text-box p {
+  font-size: 15px;
+  color: var(--lightGrey);
+}
+.rating-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating-box div {
+  border-radius: 50%;
+
+  width: 48px;
+  height: 48px;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.1rem;
+  color: var(--mediumGrey);
+  font-weight: 700;
+
+  background-color: lighten(#121417, 14.5%);
+  //   background-color: lighten(#252d37, 10%);
+}
+.rating-box div.highlight__prev {
+  background-color: var(--mediumGrey);
+  color: #fff;
+}
+
+.rating-box div:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: #fff;
+}
+.submit {
+  position: relative;
+  margin-bottom: 1.2rem;
+  margin-top: 1.6rem;
+}
+
+.btn {
+  background-color: #fc7614;
+  border: none;
+  color: darken(#fff, 10%);
+  width: 100%;
+  padding: 12px 0;
+  font-size: 15px;
+  letter-spacing: 1.8px;
+  border-radius: 24px;
+  text-align: center;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  box-shadow: 0 10px 10px 0px rgba(#000, 0.2);
+}
+.submit .btn:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 75%;
+  }
+}
+@media (max-width: 544px) {
+  .container {
+    width: 90%;
+  }
+}
+.svg-container {
+  margin: 16px auto 0;
+}
+.rate-box {
+  //   background-color: lighten(#121417, 14.5%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 5px rgba(#000, 0.1);
+
+  background-color: lighten(#252d37, 2%);
+
+  margin: 0 auto;
+  padding: 4px 16px;
+
+  border-radius: 0.8rem;
+  -webkit-border-radius: 0.8rem;
+  -moz-border-radius: 0.8rem;
+  -ms-border-radius: 0.8rem;
+  -o-border-radius: 0.8rem;
+}
+.rate-selected__text {
+  color: var(--orange);
+  font-size: 14px;
+  text-align: center;
+}
+
+.thank__text-box {
+  margin: 6px 0 40px 0;
+}
+.thank__text-box h2 {
+  text-align: center;
+  color: var(--white);
+}
+.thank__text-box p {
+  font-size: 15px;
+  color: var(--lightGrey);
+  text-align: center;
+  line-height: 1.5;
+}
