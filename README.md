@@ -1,5 +1,5 @@
 # The project is live at
-https://front-end-mentor-works.github.io/interactive-rating-components/
+https://sinan14.github.io/interactive-rating-components/
 # Frontend Mentor - Interactive rating component
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
